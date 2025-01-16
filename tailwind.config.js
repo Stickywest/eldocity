@@ -12,7 +12,21 @@ export default {
         pink: '#db6676',
         blue: '#5a79a7',
       },
+      animation: {
+        'fade-out': 'fadeOut 3s ease-out forwards',
+        'slide-up': 'slideUp 1s ease-out forwards',
+      },
+      keyframes: {
+        fadeOut: {
+          '0%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(100%)', opacity: 0 },
+          '100%': { transform: 'translateY(0)', opacity: 1 },
+        },
+      },
     },
   },
   plugins: [],
-}
+};

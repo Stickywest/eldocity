@@ -5,11 +5,14 @@ import Home from './pages/Home';
 import Classes from './pages/Classes';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
-import "./index.css";
+ // Import the Hero Section
+
 const App = () => {
   return (
-    <Router>
+    <Router basename="/eldocity">
       <Navbar />
+      {/* Hero Section is displayed on all pages */}
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/classes" element={<Classes />} />

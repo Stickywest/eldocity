@@ -26,7 +26,7 @@ const HelloSection: React.FC = () => {
     <section
       className="w-full h-screen bg-cover bg-center relative"
       style={{
-        backgroundImage: "url('/src/assets/hero.avif')", // Replace with the actual image path
+        backgroundImage: "url('/src/assets/hero.jpg')", // Replace with the actual image path
       }}
     >
       {/* Overlay for text readability */}
